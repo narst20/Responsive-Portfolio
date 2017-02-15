@@ -1,0 +1,371 @@
+/* Background pattern from Subtle Patterns */
+* {
+	font-family: "Arial", "Helvetica Nueue", Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+	background-image:url('../images/vintage_speckles.png');
+	width: 960px;
+	position:relative; 
+    }
+
+#header{
+	width: 960px;
+	display: block;
+	text-align: right;
+	background-color: #ffffff;
+	border: 35px #cccccc;
+	padding: 30px;
+}
+
+#header2 {
+	width: 960px;
+	display: none;
+	text-align: right;
+	background-color: #ffffff;
+	border: 35px #cccccc;
+	padding: 30px;
+}
+
+ul  {
+    list-style: none;
+}
+
+li{
+	float: right;
+
+}
+
+li a {
+    display: block;
+    padding: 8px;
+ }
+
+#nav {
+    width:175px;
+    top: 0px;
+    display: block;
+	text-align: center;
+	color: white;
+	background-color: #4aaaa5;
+	border: 15px #cccccc;
+	padding: 30px;
+	margin: 0px 25px 10px 25px
+}
+
+#h1 {
+	font-family: "Georgia", Times, "Times New Roman", serif;
+	font-size: 30px
+}
+
+#wrap {
+	min-height: 100%;
+
+}
+
+#container{
+	overflow:auto;
+	width: 960px;
+	padding: 20px 20px 50px 20px;
+  }
+
+.bio {
+	display: block;
+	width: 60%;
+	background-color: #ffffff;
+	border: 10px #dddddd;
+	padding: 20px;
+	margin: 0px 20px 20px;
+	float: left;
+}
+
+.contact {
+	display: block;
+	width: 60%;
+	background-color: #ffffff;
+	border: 10px #dddddd;
+	padding: 10px;
+	float: left;
+}
+
+.portfolio {
+	display: block;
+	width: 65%;
+	background-color: #ffffff;
+	border: 10px #dddddd;
+	padding: 10px;
+	margin: 10px;
+	float: left;
+}
+
+th {
+    border-bottom: 1px solid teal;
+    border-collapse: collapse;
+    text-align: left
+}
+
+td {
+    text-align: center;
+    padding: 15px;
+}
+
+#purple-color {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+
+#floattext {
+    text-align: justify;
+ }
+
+.connections {
+	display: block;
+	text-align: center;
+	width: 30%;
+	background-color: #ffffff;
+	border: 10px #dddddd;
+	padding: 10px;
+	margin: 10px;
+	float: right;
+}
+
+
+
+.stick {
+	color: white;
+	position: absolute;
+	width: 960px;
+ }
+
+
+/**Responsive Media**/
+@media screen and (max-width: 960px) {
+   .header{
+ 	   width: 960px;
+	}
+     
+	#header2{
+ 	   display:none;
+	}
+
+    .body {
+ 	   width: 960px;
+	}
+
+	.stick {
+ 	   width: 960px;
+	}
+
+    .container {
+ 	   width: 960px;
+ 	   overflow:hidden;
+	}
+
+    .bio {
+        float:none;
+	    display:block;
+	    position:relative;
+	   	width: 400px;
+	}
+
+	.contact {
+        float:none;
+	    display:block;
+	    position:relative;
+	   	width: 400px;
+	}
+
+	#name {
+		width:350px;
+	}
+
+	#email {
+		width:350px;
+	}
+
+	text-area{
+		width:100px;
+	}
+
+	.portfolio {
+        float:none;
+	    display:block;
+	    position:relative;
+	    width: 400px;
+	}
+
+	.connections {
+		width: 300px;
+		float:none;
+	    display:block;
+	   	position:relative;
+     }
+
+     .stick {
+		color: white;
+		position: absolute;
+		width: 960px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+    .header{
+ 	   width: 768px;
+	}
+    
+   	#header{
+ 	   width: 768px;
+	}
+
+	#header2{
+ 	   display:none;
+	}
+
+.body {
+ 	   width: 768px;
+	}
+
+	.stick {
+ 	   width: 768px;
+	}
+
+    .container {
+ 	   width: 768px;
+ 	   overflow:hidden;
+	}
+
+    .bio {
+        float:none;
+	    display:block;
+	    position:relative;
+	    width: 40%;
+	}
+
+	.contact {
+        float:none;
+	    display:block;
+	    position:relative;
+	    width: 40%;
+	}
+
+	#name {
+		width:350px;
+	}
+
+	#email {
+		width:350px;
+	}
+
+	text-area{
+		width:10px;
+	}
+	
+	.portfolio {
+        float:none;
+	    display:block;
+	    position:relative;
+	    width: 40%;
+	}
+
+
+	.connections {
+		width: 40%;
+		float:none;
+	    display:block;
+	    position:relative;
+
+     }
+
+     .stick {
+		color: white;
+		position: absolute;
+		width: 768px;
+ 	}
+}
+
+@media screen and (max-width: 640px) {
+    .header{
+ 	   width: 640px;
+	}
+
+	#header{
+ 	   display:none;
+	}
+
+	#header2{
+ 	   width: 640px;
+	}
+
+    .body {
+ 	   width: 640px;
+	}
+
+	.stick {
+ 	   width: 640px;
+	}
+
+    .container {
+ 	   width: 640px;
+ 	   overflow:hidden;
+	}
+
+    .bio {
+        float:none;
+	    display:block;
+	    position:relative;
+	   width: 40%;
+	}
+
+	.contact {
+        float:none;
+	    display:block;
+	    position:relative;
+	    width: 40%;
+	}
+
+
+	#name {
+		width:350px;
+	}
+
+	#email {
+		width:350px;
+	}
+
+	#message text-area{
+		width:100px;
+	}
+	
+	.portfolio {
+        float:none;
+	    display:block;
+	    position:relative;
+	    width: 40%;
+	}
+
+	.connections {
+		width: 40%;
+		float:none;
+	    display:block;
+	    position:relative;
+     }
+
+     .stick {
+		color: white;
+		position: absolute;
+		width: 640px;
+ 	}
+}
